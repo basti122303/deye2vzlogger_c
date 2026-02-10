@@ -171,9 +171,9 @@ int main() {
             struct MemoryStruct chunk = { malloc(1), 0 };
 
             curl_easy_setopt(curl, CURLOPT_URL, url);
-	    curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 5L);
-	    curl_easy_setopt(curl, CURLOPT_TIMEOUT, 10L);
-	    curl_easy_setopt(curl, CURLOPT_USERAGENT, "deye2vzlogger/1.0");
+	    	curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 5L);
+	    	curl_easy_setopt(curl, CURLOPT_TIMEOUT, 10L);
+	    	curl_easy_setopt(curl, CURLOPT_USERAGENT, "deye2vzlogger/1.0");
             curl_easy_setopt(curl, CURLOPT_USERNAME, config.inverters[i].user);
             curl_easy_setopt(curl, CURLOPT_PASSWORD, config.inverters[i].pass);
             curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteMemoryCallback);
